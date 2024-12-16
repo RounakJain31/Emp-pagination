@@ -9,7 +9,7 @@ th {
   background-color: rgb(149, 217, 149);
 }
 
-button {
+button ,span{
   padding: 10px 20px;
   margin: 10px;
   cursor: pointer;

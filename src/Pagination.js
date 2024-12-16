@@ -74,7 +74,7 @@ const Pagination = () => {
           Previous
         </button>
         <span style={{ margin: '0 10px' }}>
-          Page {currentPage} of {totalPages}
+         {currentPage} 
         </span>
         <button onClick={handleNext} disabled={currentPage === totalPages}>
           Next

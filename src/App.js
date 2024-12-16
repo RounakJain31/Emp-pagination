@@ -4,7 +4,7 @@ import Pagination from './Pagination';
 function App() {
   return (
     <div className="App">
-      <h1>Employee Pagination</h1>
+      <h1>Employee Data Table</h1>
       <Pagination />
     </div>
   );
