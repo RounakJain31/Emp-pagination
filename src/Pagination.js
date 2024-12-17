@@ -14,15 +14,15 @@ const Pagination = () => {
         if (!response.ok) {
           throw new Error('failed to fetch data');
         }
-        return response.json(); 
+        return response.json();
       })
       .then((data) => {
         setData(data);
       })
-      .catch(err){
+      .catch((error) => {
         console.log("failed to fetch data", err);
-        alert("failed to fetch data");
-    }
+            alert("failed to fetch data");
+      });
   }, []);
 
   // Calculate the total number of pages
