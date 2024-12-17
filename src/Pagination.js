@@ -12,7 +12,7 @@ const Pagination = () => {
     fetch('https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json')
       .then((response) => {
         if (!response.ok) {
-          throw new Error('Failed to fetch data');
+          throw new Error('failed to fetch data');
         }
         return response.json();
       })
