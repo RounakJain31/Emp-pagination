@@ -19,9 +19,10 @@ const Pagination = () => {
       .then((data) => {
         setData(data);
       })
-      .catch((error) => {
-        setError(error.message);
-      });
+      .catch(err){
+        console.log("failed to fetch data", err);
+        alert("failed to fetch data");
+    }
   }, []);
 
   // Calculate the total number of pages
